@@ -1,2 +1,2 @@
 # med-calc
-Determine how long your supply of medication will last.
+Project how long your supply of injectable medication will last.

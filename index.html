@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Med Calc</title>
+    <link rel="stylesheet" href="css/application.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/8b4a3c98c7.js" crossorigin="anonymous"></script>
+    <script src="js/application.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fa-solid fa-vial"></i> Med Calc <i class="fa-solid fa-syringe"></i></h1>
+      <div class="display">
+        <p id="resultDays">133 days' worth</p>
+        <p id="resultDate"></p>
+      </div>
+      <label>Supply on hand</label>
+      <div class="row">
+        <input type="range" min="0" max="100" value="5" id="supply" oninput="determineDays()">
+        <span id="supply-val">5 mL</span>
+      </div>
+      <label>Dosage</label>
+      <div class="row">
+        <input type="range" min="0" max="200" value="25" id="dose" oninput="determineDays()">
+        <span id="dose-val">0.25 mL</span>
+      </div>
+      <label>Days between doses</label>
+      <div class="row">
+        <input type="range" min="1" max="14" value="7" id="interval" oninput="determineDays()">
+        <span id="interval-val">7 days</span>
+      </div>
+      <div class="disclaimer">This should not be considered medical advice. The calculator assumes 5% of supply ends up uninjectable.</div>
+    </div>
+  </body>
+ </html>
