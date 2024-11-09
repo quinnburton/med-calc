@@ -75,3 +75,5 @@ function determineDays(){
     // Display the information on the webpage.
     document.getElementById("category").textContent = category;
   }
+
+  window.onload = determineDays;
