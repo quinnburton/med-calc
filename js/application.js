@@ -4,7 +4,7 @@ function determineDays(){
   // How many days' supply remaining
   var resultDays = document.getElementById("resultDays");
   
-  // Estimated day you'll run out of your medication
+  // Estimated date you'll run out of your medication
   var resultDate = document.getElementById("resultDate");
   
   // The value of the supply slider
@@ -13,7 +13,7 @@ function determineDays(){
   // The value of the dose slider
   var dose = parseInt(document.getElementById("dose").value);
   
-  // The value of the interval slider
+  // The value of the dose interval slider
   var interval = parseInt(document.getElementById("interval").value);
     
   // The values of supply, dose, and dose interval are displayed on the webpage using textContent
