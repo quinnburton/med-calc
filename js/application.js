@@ -45,7 +45,7 @@ function determineDays(){
     const futureDate = addDays(todayDate, days);
     
     // How the date medication is projected to run out is displayed on the page
-    resultDate.textContent = "(" + futureDate.toDateString() + ")";
+    resultDate.textContent = "(" + futureDate.toDateString().substring(4) + ")";
   
     // Your supply is very low. Order a refill ASAP.
     if(daysRemaining < 14) {
